@@ -11,5 +11,12 @@ public class Day1 {
         map.put("China", 150);
 
         System.out.println(map);
+
+        //Search
+        if(map.containsKey("China")) {
+            System.out.println("Key is present in the map");
+        } else {
+            System.out.println("Key is not present in the map");
+        }
     }
 }
