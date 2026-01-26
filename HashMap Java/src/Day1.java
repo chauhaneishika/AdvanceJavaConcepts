@@ -18,5 +18,8 @@ public class Day1 {
         } else {
             System.out.println("Key is not present in the map");
         }
+        System.out.println(map.get("China")); //key exists
+        System.out.println(map.get("Indonesia")); //key doesn't exist
     }
 }
+
