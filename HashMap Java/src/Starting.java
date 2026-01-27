@@ -20,5 +20,6 @@ public class Starting {
         }
         System.out.println(map.get("China")); //key exists
         System.out.println(map.get("Indonesia")); //key doesn't exist
+
     }
 }
