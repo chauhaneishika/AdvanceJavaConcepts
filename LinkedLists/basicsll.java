@@ -13,6 +13,14 @@ public class basicsll {
             temp = temp.next;
         }
     }
+    public static int length(Node head) {
+        int count = 0;
+        while(head != null) {
+            count++;
+            head = head.next;
+        }
+        return count;
+    }
     public static class Node{
         int data; //value
         Node next; // address of next node
@@ -28,11 +36,14 @@ public class basicsll {
         Node c = new Node(9);
         Node d = new Node(8);
         Node e = new Node(16);
+        Node f = new Node(23);
         // 5 3 9 8 16
         a.next = b; // 5 -> 3 9 8 16
         b.next = c; // 5 -> 3 -> 9  8  16
         c.next = d; // 5 -> 3 -> 9 -> 8 16
         d.next = e; // 5 -> 3 -> 9 -> 8 -> 16
+        e.next = f;
+        System.out.println(length(a));
         // System.out.println(a.data);
         // System.out.println(b.data); //a.next
         // System.out.println(c.data); //a.next.next
