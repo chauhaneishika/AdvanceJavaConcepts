@@ -1,5 +1,14 @@
 package LinkedLists;
 public class basicsll {
+
+    public static void insertAtEnd(Node head, int val) {
+        Node temp = new Node(val);
+        Node t = head;
+        while(t.next != null) {
+            t = t.next;
+        }
+        t.next = temp;
+    }
     public static void displayr(Node head) {
         if(head == null) return;
         //System.out.print(head.data +" ");
@@ -36,14 +45,16 @@ public class basicsll {
         Node c = new Node(9);
         Node d = new Node(8);
         Node e = new Node(16);
-        Node f = new Node(23);
+        //Node f = new Node(23);
         // 5 3 9 8 16
         a.next = b; // 5 -> 3 9 8 16
         b.next = c; // 5 -> 3 -> 9  8  16
         c.next = d; // 5 -> 3 -> 9 -> 8 16
         d.next = e; // 5 -> 3 -> 9 -> 8 -> 16
-        e.next = f;
-        System.out.println(length(a));
+        //e.next = f;
+        //System.out.println(length(a));
+        insertAtEnd(a,87);
+
         // System.out.println(a.data);
         // System.out.println(b.data); //a.next
         // System.out.println(c.data); //a.next.next
