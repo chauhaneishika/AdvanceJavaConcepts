@@ -69,6 +69,14 @@ public class implementation {
             }
             return temp.data;
         }
+        void deleteAt (int idx) {
+            Node temp = head;
+            for(int i=1; i<= idx -1; i++) {
+                temp = temp.next;
+            }
+            temp.next = temp.next.next;
+            size--;
+        }
         void display() {
             Node temp = head;
             while (temp != null) {
@@ -88,16 +96,18 @@ public class implementation {
         ll.insertAtEnd(12); // 4 -> 5 -> 12
         //ll.display();
         ll.insertAtHead(13); // 13 -> 4 -> 5 -> 12
-        ll.display();
-        ll.insertAt(2, 10); // 13 -> 4 -> 10 -> 5 -> 12
-        ll.display();
+        //ll.display();
+        //ll.insertAt(2, 10); // 13 -> 4 -> 10 -> 5 -> 12
+        //ll.display();
         ll.insertAt(4, 10); // 13 -> 4 -> 10 -> 5 -> 12 -> 10
         ll.display();
         ll.insertAt(0, 100); // 100 -> 13 -> 4 -> 5 -> 12 -> 10
         ll.display();
-        System.out.println(ll.getAt(3));
+        ll.deleteAt(4);
+        ll.display();
+        //System.out.println(ll.getAt(3));
         //System.out.println(ll.tail.data);
-        System.out.println(ll.getAt(-8));
-        System.out.println(ll.size);
+        //System.out.println(ll.getAt(-8));
+        //System.out.println(ll.size);
     }
 }
