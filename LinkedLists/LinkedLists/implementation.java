@@ -70,11 +70,17 @@ public class implementation {
             return temp.data;
         }
         void deleteAt (int idx) {
+            if(idx == 0 ) {
+                head = head.next;
+                size--;
+                return;
+            }
             Node temp = head;
             for(int i=1; i<= idx -1; i++) {
                 temp = temp.next;
             }
             temp.next = temp.next.next;
+            tail = temp;
             size--;
         }
         void display() {
@@ -105,9 +111,12 @@ public class implementation {
         ll.display();
         ll.deleteAt(4);
         ll.display();
-        //System.out.println(ll.getAt(3));
+        ll.deleteAt(0);
+        ll.display();
+        System.out.println(ll.tail.data);
+        System.out.println(ll.getAt(3));
         //System.out.println(ll.tail.data);
         //System.out.println(ll.getAt(-8));
         //System.out.println(ll.size);
     }
-}
+}   
