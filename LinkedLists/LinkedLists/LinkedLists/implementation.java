@@ -51,7 +51,7 @@ public class implementation {
                 System.out.println("Wrong index");
                 return;
             }
-            for(int i=1; i<= idx -1; i++) {
+            for(int i=0; i< idx -1; i++) {
                 temp = temp.next;
             }
             t.next = temp.next;
@@ -64,7 +64,7 @@ public class implementation {
                 return -1;
             }
             Node temp = head;
-            for(int i =0; i<= idx; i++) {
+            for(int i =0; i< idx; i++) {
                 temp = temp.next;
             }
             return temp.data;
