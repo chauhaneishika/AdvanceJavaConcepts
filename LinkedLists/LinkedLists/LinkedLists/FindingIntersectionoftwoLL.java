@@ -12,7 +12,7 @@ public class FindingIntersectionoftwoLL {
             next = null;
         }
     }
-    public ListNode getIntersectionNode(ListNode headA, ListNOde headB) {
+    public ListNode getIntersectionNode(ListNode headA, ListNode headB) {
         ListNode tempA = headA;
         ListNode tempB = headB;
         int lengthA = 0;
