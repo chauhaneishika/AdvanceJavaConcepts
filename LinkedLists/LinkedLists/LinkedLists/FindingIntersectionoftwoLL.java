@@ -39,7 +39,7 @@ public class FindingIntersectionoftwoLL {
                 tempB = tempB.next;
             }
         }
-        while(tempA != null) {
+        while(tempA != tempB) {
             tempA = tempA.next;
             tempB = tempB.next;
         }
