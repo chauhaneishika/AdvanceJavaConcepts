@@ -10,3 +10,18 @@ Advanced-Java/
 │── design-patterns/
 │── performance/
 └── README.md
+A well-structured collection of Data Structures and Algorithms (DSA) implemented in Java.
+This repository contains my daily practice, topic-wise solutions, explanations, and coding patterns used for interview preparation and competitive programming.
+/Arrays
+/Strings
+/LinkedList
+/Stack
+/Queue
+/Trees
+/Graphs
+/Recursion
+/Sorting
+/Searching
+/DynamicProgramming
+/LeetCode
+/Practice
