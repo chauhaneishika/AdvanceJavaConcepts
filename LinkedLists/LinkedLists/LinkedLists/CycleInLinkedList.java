@@ -26,6 +26,7 @@ public class CycleInLinkedList {
             if(fast == slow) return true;
         }
         return false;
+        
     }
 }
 
