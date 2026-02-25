@@ -2,7 +2,7 @@
 // odd values, while the other contains even values.
 package LinkedLists;
 
-public class PracticeQ {
+public class MostImp {
     
 }
 // Remove dupicates from a sorted Linked List
