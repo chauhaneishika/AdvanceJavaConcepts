@@ -14,7 +14,7 @@ public class MergeTwoSortedLists {
         }
     }
 
-    
+
     public ListNode mergeTwoLists(ListNode list1, ListNode list2) {
         // Using extra space
     //     ListNode temp1 = list1;
@@ -33,7 +33,7 @@ public class MergeTwoSortedLists {
     //             temp.next = a;
     //             temp = a;
     //             temp2 = temp2.next;
-    //         }
+    //         } 
     //     }
     //     if(temp1 == null) {
     //         temp.next = temp2;
