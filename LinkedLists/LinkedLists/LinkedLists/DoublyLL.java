@@ -35,8 +35,7 @@ public class DoublyLL {
             e.prev = d;
             e.next = null;
             display(a);
+            
         }
     }
 }
-
-
