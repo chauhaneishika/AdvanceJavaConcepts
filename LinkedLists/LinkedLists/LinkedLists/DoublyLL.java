@@ -17,6 +17,45 @@ public class DoublyLL {
             }
             System.out.println();
         }
+        public static void displayReverse (Node tail) {
+            Node temp = tail;
+            while(temp != null) {
+               System.out.print(temp.val+ " ");
+               temp = temp.prev; 
+            }
+            System.out.println();
+        }
+        public static void display2 (Node random) {
+            Node temp = random;
+            // Move this temp backwards to the head
+            while(temp.prev != null) {
+                temp = temp.prev;
+            }
+            // print the list
+            while(temp != null) {
+               System.out.print(temp.val+ " ");
+               temp = temp.next; 
+            }
+            System.out.println();
+        }
+        public static Node insertAtHead(Node head, int x) {
+            Node t = new Node(x);
+            t.next = head;
+            head.prev = t;
+            head = t;
+            return head;
+        }
+        public static void insertAtTail(Node head, int x) {
+            Node temp = head;
+            // temp ko tail tak leke jaate hai
+            while(temp.next != null) {
+                temp = temp.next;
+            }
+            Node t = new Node(x);
+            temp.next = t;
+            t.prev = temp;
+        }
+        
         public static void main(String[] args) {
             // 4 10 2 99 13
             Node a = new Node(4);
@@ -35,7 +74,12 @@ public class DoublyLL {
             e.prev = d;
             e.next = null;
             display(a);
-            
+            insertAtTail(a, 90);
+            display(a);
+            //displayReverse(e);
+            //display2(c);
+            //Node newHead = insertAtHead(a, 35);
+            //display(newHead);
         }
     }
 }
