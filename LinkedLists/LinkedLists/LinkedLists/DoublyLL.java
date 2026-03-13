@@ -45,6 +45,20 @@ public class DoublyLL {
             head = t;
             return head;
         }
+        public static void insertAtIdx(Node head, int idx,int x) {
+            Node s = head;
+            for(int i=0; i<=idx-1; i++) {
+                s = s.next;
+            }
+            // s is at idx-1 position
+            Node r = s.next; //idx
+            Node t = new Node(x);
+            // s t r
+            s.next = t;
+            t.prev = s;
+            t.next = r;
+            r.prev = t;
+        }
         public static void insertAtTail(Node head, int x) {
             Node temp = head;
             // temp ko tail tak leke jaate hai
@@ -76,6 +90,9 @@ public class DoublyLL {
             display(a);
             insertAtTail(a, 90);
             display(a);
+            // 4 10 2 99 13 90
+            insertAtIdx(a, 3, 56);
+            display(a);
             //displayReverse(e);
             //display2(c);
             //Node newHead = insertAtHead(a, 35);
@@ -83,3 +100,15 @@ public class DoublyLL {
         }
     }
 }
+// delete head {
+//   head = head.next;
+//   head.prev = null;}
+
+//delete tail 
+// case1 : only head is given 
+//   while(temp.next != null) {
+//   temp = temp.prev;
+//   temp.next = null; }
+
+//delete at idx 
+//{ temp.next = temp.next.next; temp.next.prev = temp;}
