@@ -29,10 +29,11 @@ public class FlattenAMultilevelDoublyLL {
                 c.next = t;
                 if(t != null ) t.prev = c;
             }
-            temp.child = null; // very imp
+            temp.child= null; // very imp
             temp = t;
         }
         return head;
     }
+
 }
 
