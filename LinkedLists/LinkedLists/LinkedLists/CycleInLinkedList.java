@@ -25,8 +25,7 @@ public class CycleInLinkedList {
             fast = fast.next.next;
             if(fast == slow) return true;
         }
-        return false;
-        
+        return false; 
     }
 }
 
