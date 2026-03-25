@@ -51,6 +51,5 @@ public class SortList {
 
             return dummy.next;
         }
-
 }
 
