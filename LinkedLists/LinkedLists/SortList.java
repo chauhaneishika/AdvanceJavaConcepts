@@ -50,6 +50,7 @@ public class SortList {
             if(l2 != null) tail.next = l2;
 
             return dummy.next;
+            
         }
 }
 
