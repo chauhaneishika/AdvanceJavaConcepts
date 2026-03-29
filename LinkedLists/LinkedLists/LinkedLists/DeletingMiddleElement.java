@@ -33,6 +33,7 @@ public class DeletingMiddleElement {
         //slow -> 2, slow.next -> 3, slow.next.next -> 4
         slow.next = slow.next.next;
         return head;
+        
     }
 }
 
