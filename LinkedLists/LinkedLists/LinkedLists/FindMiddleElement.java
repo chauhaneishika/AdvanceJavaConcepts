@@ -18,5 +18,6 @@ public class FindMiddleElement {
             fast = fast.next.next;
         }
         return slow;
+        
     }
 }
