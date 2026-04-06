@@ -110,6 +110,5 @@ public class DoublyLL {
 //   temp = temp.prev;
 //   temp.next = null; }
 
-
 //delete at idx 
 // { temp.next = temp.next.next; temp.next.prev = temp;}
